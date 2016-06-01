@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Factorizer</h1>
+        <table width="600">
+            <tr>
+                <td>
+                    <form>
+                    Number:
+                    <input class="number">
+                    <input type="submit" class="submit" value="Calculate"> <img class="loading" src="hex-loader2.gif" style="height: 20px; align: right; margin-bottom: -5px; display: none;" alt="loading">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Answer:<br/>
+                    <textarea class="answer" style="width: 600px; height: 200px;" readonly="true"></textarea>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var timer = setInterval(request, 1000);
+                $("form").submit(function(event){
+                    event.preventDefault();
+                    $(".loading").show();
+                    request($(".number").val());
+                });
+            });
+        </script>
+    </body>
+</html>
