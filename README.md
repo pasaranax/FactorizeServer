@@ -10,4 +10,4 @@ python main.py
 ```
 2\. Открыть клиент:
 
-[http://localhost/client/](http://localhost/client/)
+[http://localhost:8000/client/](http://localhost:8000/client/)

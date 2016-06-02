@@ -9,7 +9,7 @@ from web_app import web_app
 
     
 if __name__ == '__main__':
-    httpd = make_server("localhost", 80, web_app)
+    httpd = make_server("localhost", 8000, web_app)
     httpd.serve_forever()
     
 
