@@ -1,7 +1,7 @@
 '''
 Created on 31 мая 2016 г.
 
-@author: Михаил Булыгин <pararanax@gmail.com>
+@author: Михаил Булыгин <pasaranax@gmail.com>
 '''
 
 import sqlite3
